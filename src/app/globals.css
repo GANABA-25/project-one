@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --background: var(--base-color-brand--black);
+}
+
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: local('Montserrat-Regular'),
+    url('../../public/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: local('Montserrat-SemiBold'),
+    url('../../public/fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: local('Montserrat-Bold'),
+    url('../../public/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+
+@layer utilities {
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .shadow-extra-small {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .shadow-small {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-medium {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .shadow-large {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .shadow-xlarge {
+    box-shadow: 0 15px 15px 15px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .shadow-xlarge-white {
+    box-shadow: 0 15px 15px 15px rgba(105, 103, 103, 0.1), 0 4px 6px -2px rgba(158, 156, 156, 0.05);
+  }
+
+  .montserrat-regular {
+    font-family: Montserrat-Regular, sans-serif;
+  }
+
+  .montserrat-semibold {
+    font-family: Montserrat-SemiBold, sans-serif;
+  }
+
+  .montserrat-bold {
+    font-family: Montserrat-Bold, sans-serif;
+  }
+
+  .offcanvas {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* Start offscreen */
+    width: 20rem;
+    height: 100%;
+    /* background-color: rgb(243, 239, 239); */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    /* Increase the z-index of the offcanvas */
+  }
+
+  .offcanvas.open {
+    left: 0;
+    /* Slide in when open */
+  }
+
+  /* Toggle button */
+  .toggle-butt {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+  }
+
+  /* Overlay styles */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
+    opacity: 0;
+    /* Initially invisible */
+    pointer-events: none;
+    /* Make it non-interactable when not visible */
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .overlay.open {
+    opacity: 1;
+    /* Make it visible when the offcanvas is open */
+    pointer-events: auto;
+    /* Make it interactable */
+  }
+
+  .container {
+    background-image: url("../../public/images/landing.jpg");
+    background-size: cover;
+    background-position: center; /* Change 'contain' to 'center' */
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container2 {
+    background-image: url("../../public/images/landingImages/land2.jpg");
+    background-size: cover;
+    background-position: center; /* Change 'contain' to 'center' */
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container3 {
+    background-image: url("../../public/images/landingImages/land3.jpg");
+    background-size: cover;
+    background-position: center; /* Change 'contain' to 'center' */
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container4 {
+    background-image: url("../../public/images/landingImages/land4.jpg");
+    background-size: cover;
+    background-position: center; /* Change 'contain' to 'center' */
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container5 {
+    background-image: url("../../public/images/landingImages/land5.jpg");
+    background-size: cover;
+    background-position: center; /* Change 'contain' to 'center' */
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container6 {
+    background-image: url("../../public/images/landingImages/land6.jpg");
+    background-size: cover;
+    background-position: center; /* Change 'contain' to 'center' */
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .visionContainer {
+    background-image: url("../../public/images/landingImages/land4.jpg");
+    background-size: cover;
+    background-position: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutContainer {
+    background-image: url("../../public/images/landingImages/land6.jpg");
+    background-size: cover;
+    background-position: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homecontainer {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* Full viewport height */
+    overflow: hidden;
+    z-index:-1
+  }
+
+  .bg-gradient-custom {
+    background: linear-gradient(200deg, #0a9995 0%,  #060311 5%);
+  }
+
+  .custom-gradient{
+   background: linear-gradient(to right, #333c45, #20272c)
+  }
+
+  .custom-gradient-2{
+    background:linear-gradient(to right, #333c45, #20272c 50%)
+  }
+
+  .zindices {
+    z-index: 100;
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; 
+  }
+  
+
+
+  /* .visionContainer {
+    background-image: url("../../public/images/Teclermain.jpg");
+    background-size: cover;
+    background-position: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* .homecontainer {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    
+    overflow: hidden;
+  } */
+
+  /* .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; 
+  } */
+
+  
+
+  /* @media only screen and (min-width: 768px) {
+    .container {
+      height: 70vh;
+      max-width: 100%;
+      display: flex;
+    }
+  } */
+
+  /* @media only screen and (min-width: 1200px) {
+    .container {
+      height: 70vh;
+
+    }
+  } */
+
+}
