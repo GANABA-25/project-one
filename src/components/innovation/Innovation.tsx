@@ -90,9 +90,9 @@ const Innovation = () => {
       description: (
         <>
           Identifying
-          <strong className="text-red-500"> startup/business ideas, </strong>
+          <strong className="text-green-500"> startup/business ideas, </strong>
           team building, market research, beginner{" "}
-          <strong className="text-red-500"> pitching/training.</strong>
+          <strong className="text-green-500"> pitching/training.</strong>
         </>
       ),
     },
@@ -102,8 +102,9 @@ const Innovation = () => {
       description: (
         <>
           Building of database, innovative ideas entry, advance
-          <strong className="text-red-500"> pitching/training</strong>, network
-          and ecosystem, prototyping, market test, Business registration.
+          <strong className="text-green-500"> pitching/training</strong>,
+          network and ecosystem, prototyping, market test, Business
+          registration.
         </>
       ),
     },
@@ -113,8 +114,8 @@ const Innovation = () => {
       description: (
         <>
           Robust Due diligence process, legalities, intellectual property,
-          <strong className="text-red-500"> funding/investment,</strong> scaling
-          and growth, mass production, advance exit training.
+          <strong className="text-green-500"> funding/investment,</strong>{" "}
+          scaling and growth, mass production, advance exit training.
         </>
       ),
     },
@@ -283,10 +284,10 @@ const Innovation = () => {
           <div className="absolute inset-0 bg-black/50" />
           <Card className="relative p-4 bg-white">
             <div>
-              <h1 className="max-[767px]:text-2xl text-3xl lg:text-center my-4 text-green-800">
+              <h1 className="max-[767px]:text-2xl lg:text-center my-4 text-green-800 montserrat-bold lg:text-2xl">
                 Siriboe Agri Incubator
               </h1>
-              <p className="opacity-80">
+              <p className="opacity-80 montserrat-regular">
                 A one-year in-house incubation program for innovators who have
                 innovative ideas and need technical, and other supports online
                 and in-person. Offers mentorship, funding opportunities, and
@@ -294,7 +295,7 @@ const Innovation = () => {
               </p>
             </div>
             <div>
-              <h1 className="text-xl my-4 text-green-800 md:text-2xl lg:text-xl">
+              <h1 className="text-xl my-4 text-green-800 md:text-2xl lg:text-xl montserrat-bold">
                 Incubation Stages
               </h1>
               <div className="grid max-[767px]:gap-4 md:gap-6 lg:flex gap-4">
@@ -310,11 +311,11 @@ const Innovation = () => {
             </div>
 
             <div>
-              <h1 className="text-xl my-4 md:text-2xl text-green-800 lg:text-xl">
+              <h1 className="text-xl my-4 md:text-2xl text-green-800 lg:text-xl montserrat-bold">
                 Incubation Program Outline
               </h1>
 
-              <ul className="max-[767px]:text-sm grid gap-2 md:gap-3 lg:grid-cols-2 lg:gap-2">
+              <ul className="max-[767px]:text-sm grid gap-2 md:gap-3 lg:grid-cols-2 lg:gap-2 montserrat-bold">
                 <li className="flex items-center gap-2">
                   <IoIosCheckmarkCircleOutline className="text-green-800" />
                   Orientation
@@ -408,8 +409,8 @@ const Innovation = () => {
       </section>
 
       {/*----------------- Impact and Sustainability (% and +figures) ---------------------*/}
-      <section className=" w-[80%] m-auto bg-green-700 text-white p-12 grid lg:grid-cols-2 gap-8 items-center">
-        {/* Impact and Sustainability */}
+      {/* <section className=" w-[80%] m-auto bg-green-700 text-white p-12 grid lg:grid-cols-2 gap-8 items-center">
+       
         <div className="flex flex-col items-center lg:items-start space-y-6">
           <div className="flex items-center space-x-4">
             <div className="bg-white text-green-700 p-4 rounded-full">
@@ -441,7 +442,7 @@ const Innovation = () => {
           </button>
         </div>
 
-        {/* Makerspace Lab */}
+       
         <div className="flex flex-col items-center lg:items-start space-y-6">
           <div className="flex items-center space-x-4">
             <div className="bg-white text-green-700 p-4 rounded-full">
@@ -474,7 +475,7 @@ const Innovation = () => {
             Explore Lab
           </button>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

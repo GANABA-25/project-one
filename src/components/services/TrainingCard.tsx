@@ -21,9 +21,9 @@ const TrainingCard: React.FC<TrainingCardProps> = ({
         borderTop: `8px solid ${color}`,
       }}
     >
-      <h1 className="text-green-800 text-4xl">{header}</h1>
-      <h1 className="text-xl">{title}</h1>
-      <p className="font-serif">{description}</p>
+      <h1 className="text-green-800 text-4xl montserrat-bold">{header}</h1>
+      <h1 className="text-xl montserrat-semibold">{title}</h1>
+      <p className="montserrat-regular">{description}</p>
     </div>
   );
 };

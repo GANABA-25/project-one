@@ -1,5 +1,5 @@
-import React from 'react';
-import { Users, User, Twitter, Facebook, Instagram } from 'lucide-react';
+import React from "react";
+import { Users, User, Twitter, Facebook, Instagram } from "lucide-react";
 
 interface SocialLinks {
   twitter?: string;
@@ -10,7 +10,7 @@ interface SocialLinks {
 interface TeamMember {
   name: string;
   role: string;
-  category: 'board' | 'management' | 'staff';
+  category: "board" | "management" | "staff";
   image: string;
   social?: SocialLinks;
 }
@@ -18,93 +18,98 @@ interface TeamMember {
 export function Team() {
   const team: TeamMember[] = [
     {
-      name: 'Nana Yaw Sarpong Siriboe I',
-      role: 'Executive Director, Akyempemhene of the Juaben Traditional Area',
-      category: 'management',
-      image: 'https://images.unsplash.com/photo-1578496781379-7dcfb995293d?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
+      name: "Nana Yaw Sarpong Siriboe I",
+      role: "Executive Director, Akyempemhene of the Juaben Traditional Area",
+      category: "management",
+      image: "/images/managementTeam/NANASIRIBOE.jpg",
       social: {
-        twitter: 'https://twitter.com/nanayaw',
-        facebook: 'https://facebook.com/nanayaw',
-        instagram: 'https://instagram.com/nanayaw'
-      }
+        twitter: "https://twitter.com/nanayaw",
+        facebook: "https://facebook.com/nanayaw",
+        instagram: "https://instagram.com/nanayaw",
+      },
     },
     {
-      name: 'Dr. Emmanuel O. Agyenim-Boateng',
-      role: 'Director of Administration',
-      category: 'management',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
+      name: "Dr. Emmanuel O. Agyenim-Boateng",
+      role: "Director of Administration",
+      category: "management",
+      image: "/images/managementTeam/Dr.Agyenim.webp",
       social: {
-        twitter: 'https://twitter.com/emmanuel',
-        facebook: 'https://facebook.com/emmanuel'
-      }
+        twitter: "https://twitter.com/emmanuel",
+        facebook: "https://facebook.com/emmanuel",
+      },
     },
     {
-      name: 'Augustine Tetteh Opare',
-      role: 'Administrator/Hub Manager',
-      category: 'management',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
+      name: "Augustine Tetteh Opare",
+      role: "Administrator/Hub Manager",
+      category: "management",
+      image: "/images/managementTeam/Augustine.jpg",
       social: {
-        facebook: 'https://facebook.com/augustine',
-        instagram: 'https://instagram.com/augustine'
-      }
+        facebook: "https://facebook.com/augustine",
+        instagram: "https://instagram.com/augustine",
+      },
     },
     {
-      name: 'Olivia Ofori',
-      role: 'Administrative Secretary',
-      category: 'management',
-      image: 'https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
+      name: "Olivia Ofori",
+      role: "Administrative Secretary",
+      category: "management",
+      image: "/images/managementTeam/Olivia.jpeg",
       social: {
-        twitter: 'https://twitter.com/olivia',
-        instagram: 'https://instagram.com/olivia'
-      }
+        twitter: "https://twitter.com/olivia",
+        instagram: "https://instagram.com/olivia",
+      },
     },
     {
-      name: 'Ebenezer Nyamekye',
-      role: 'General Farm Manager',
-      category: 'staff',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
+      name: "Ebenezer Nyamekye",
+      role: "General Farm Manager",
+      category: "staff",
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
       social: {
-        facebook: 'https://facebook.com/ebenezer'
-      }
+        facebook: "https://facebook.com/ebenezer",
+      },
     },
     {
-      name: 'James Kwadwo Bayele',
-      role: 'Farm Manager (Animal Husbandry)',
-      category: 'staff',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
+      name: "James Kwadwo Bayele",
+      role: "Farm Manager (Animal Husbandry)",
+      category: "staff",
+      image:
+        "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
       social: {
-        facebook: 'https://facebook.com/james',
-        instagram: 'https://instagram.com/james'
-      }
+        facebook: "https://facebook.com/james",
+        instagram: "https://instagram.com/james",
+      },
     },
     {
-      name: 'Barima Okyere Ampadu',
-      role: 'Farm Manager (Crops)',
-      category: 'staff',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
+      name: "Barima Okyere Ampadu",
+      role: "Farm Manager (Crops)",
+      category: "staff",
+      image:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
       social: {
-        twitter: 'https://twitter.com/barima'
-      }
+        twitter: "https://twitter.com/barima",
+      },
     },
     {
-      name: 'Nana Asafo Adjei',
-      role: 'Liaison Officer',
-      category: 'staff',
-      image: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
+      name: "Nana Asafo Adjei",
+      role: "Liaison Officer",
+      category: "staff",
+      image:
+        "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
       social: {
-        facebook: 'https://facebook.com/nanaasafo'
-      }
+        facebook: "https://facebook.com/nanaasafo",
+      },
     },
     {
-      name: 'Adu Asuming Francis',
-      role: 'Accountant',
-      category: 'staff',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
+      name: "Adu Asuming Francis",
+      role: "Accountant",
+      category: "staff",
+      image:
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
       social: {
-        twitter: 'https://twitter.com/adu',
-        facebook: 'https://facebook.com/adu'
-      }
-    }
+        twitter: "https://twitter.com/adu",
+        facebook: "https://facebook.com/adu",
+      },
+    },
   ];
 
   return (
@@ -122,11 +127,11 @@ export function Team() {
 
         <div className="mt-16">
           <div className="space-y-16">
-            {['management', 'staff'].map((category) => (
+            {["management", "staff"].map((category) => (
               <div key={category}>
                 <h3 className="text-2xl font-bold text-gray-900 mb-8 capitalize flex items-center">
                   <User className="h-6 w-6 text-green-600 mr-2 montserrat-bold" />
-                  {category === 'management' ? 'Management Team' : 'Staff'}
+                  {category === "management" ? "Management Team" : "Staff"}
                 </h3>
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                   {team
@@ -148,7 +153,9 @@ export function Team() {
                           <h4 className="text-lg montserrat-semibold text-gray-900 mb-1">
                             {member.name}
                           </h4>
-                          <p className="text-sm text-gray-600 mb-4 montserrat-regular">{member.role}</p>
+                          <p className="text-sm text-gray-600 mb-4 montserrat-regular">
+                            {member.role}
+                          </p>
                           {member.social && (
                             <div className="flex space-x-4">
                               {member.social.twitter && (

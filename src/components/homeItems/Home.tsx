@@ -7,7 +7,9 @@ import { motion } from "framer-motion";
 import { IoArrowForwardCircle } from "react-icons/io5";
 import Descriptions from "./Descriptions";
 import SiriboeNews from "./SereBoeNews";
+
 import Events from "./events/Events";
+import PartnersCard from "./serviceItems/PartnersCard";
 
 const newsData = [
   {
@@ -53,6 +55,51 @@ const newsData = [
     color: "#f36d50",
     textColor: "black",
     ButtonColor: "black",
+  },
+];
+
+const partnersData = [
+  {
+    id: "1",
+    name: "Kwame Nkrumah University of Science and Technology",
+    logo: "/images/partners logos/KNUST.png",
+  },
+  {
+    id: "2",
+    name: "Centre for Scientific and Industrial Research (CSIR)",
+    logo: "/images/partners logos/csir.png",
+  },
+  {
+    id: "3",
+    name: "Kwadaso Agric College",
+    logo: "/images/partners logos/Kwadaso agric 2.jpg",
+  },
+  {
+    id: "4",
+    name: "World Bank Group",
+    logo: "/images/partners logos/WorldBank_Logo_optimized-17.png",
+  },
+  {
+    id: "5",
+    name: "Ministry of Finance",
+    logo: "/images/partners logos/mof 1.jpg",
+  },
+  { id: "6", name: "NEIP", logo: "/images/partners logos/Neip (1).png" },
+  { id: "7", name: "UNDP", logo: "/images/partners logos/UNDP_YAI.png" },
+  {
+    id: "8",
+    name: "MEST Africa",
+    logo: "/images/partners logos/MEST.png",
+  },
+  {
+    id: "9",
+    name: "Siriboe Farms",
+    logo: "/images/partners logos/KNUST.png",
+  },
+  {
+    id: "10",
+    name: "Juaben Oil Mill",
+    logo: "/images/partners logos/KNUST.png",
   },
 ];
 
@@ -102,7 +149,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="min-h-screen">
+      <section className="min-h-screen montserrat-regular">
         <section
           className={`${items[itemIndex]} max-[767px]:mt-1 md:mt-1 overflow-x-hidden`}
         >
@@ -166,9 +213,9 @@ const Home = () => {
           <div>
             <Descriptions />
           </div>
-          <div className="bg-blue-950 mt-6 py-8 grid gap-8 text-white">
+          <div className="bg-blue-950 mt-6 py-8 grid gap-8 text-white montserrat-regular mb-16">
             <div className="text-center w-[95%] m-auto grid gap-2">
-              <h1 className="max-[767px]:text-3xl montserrat-bold font-bold md:text-4xl lg:text-4xl flex justify-center items-center gap-1">
+              <h1 className="max-[767px]:text-3xl montserrat-bold md:text-4xl lg:text-4xl flex justify-center items-center gap-1">
                 Siriboe News <FcNews />
               </h1>
               <p>
@@ -195,8 +242,60 @@ const Home = () => {
                 />
               ))}
             </div>
-            {/* <SiriboeNews /> */}
           </div>
+
+          {/*---------------------------------- PARTNERS ----------------------------------*/}
+          <section className="grid gap-5 mb-12">
+            <div className="text-center grid gap-5">
+              <h1 className="text-4xl font-bold text-green-800 montserrat-bold">
+                Rethink
+              </h1>
+              <p className="text-gray-700 text-lg">
+                Our future starts now. An initiative of the office of the 2022
+                National Best Farmer Launch of Rethink.
+              </p>
+              <h2 className="text-2xl font-bold text-green-800 montserrat-bold">
+                Overview of Past Programs
+              </h2>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>Koforidua Technical University</li>
+                <li>
+                  St. Louis Senior High School Monitoring and Evaluation Form
+                </li>
+              </ul>
+            </div>
+
+            <div
+              className="relative bg-cover bg-center bg-no-repeat min-h-screen p-6"
+              style={{ backgroundImage: "url('/images/backGroundImage.jpg')" }}
+            >
+              <div className="absolute inset-0 bg-black/70" />
+              <div className="relative space-y-8 p-6 shadow-lg text-white">
+                <div>
+                  <h1 className="montserrat-bold text-4xl text-center">
+                    Our Partners
+                  </h1>
+                  <div className="flex justify-center items-center gap-0.5">
+                    <div className="bg-green-800 w-[20%] md:w-[10%] lg:w-[5%] h-2" />
+                    <div className="bg-white w-[40%] md:w-[20%] lg:w-[10%] h-2" />
+                  </div>
+                </div>
+                <p className="text-lg  text-center max-w-2xl mx-auto">
+                  Our future starts now. An initiative of the office of the 2022
+                  National Best Farmer Launch of Rethink.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {partnersData.map((data) => (
+                    <PartnersCard
+                      key={data.id}
+                      name={data.name}
+                      logo={data.logo}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
           <div>
             <Events />
           </div>

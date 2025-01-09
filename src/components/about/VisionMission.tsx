@@ -14,67 +14,70 @@ export function VisionMission() {
 
   return (
     <div className="bg-gradient-to-b from-gray-50 to-white py-16 sm:py-24">
-      {/* Vision Section */}
+      {/*------------------------ Vision Section ------------------------*/}
       <div className="">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center space-x-2 mb-6">
-            <Target className="h-6 w-6 text-green-600" />
-            <h2 className="text-2xl montserrat-bold text-gray-900">
-              Vision Statement
-            </h2>
-          </div>
-          <div className="flex justify-between items-center gap-16">
-            <div className="relative">
-              <div className="bg-white rounded-l-2xl shadow-xl p-8">
-                <p className="text-[1.2rem] text-gray-600 mb-8 montserrat-regular leading-relaxed">
-                  SIASD envisions to be Africa's premier Institute and
-                  innovation hub for research-based agriculture, agribusiness
-                  and entrepreneurship education.
-                </p>
-                <ul className="space-y-2">
-                  {visionPoints.map((point, index) => (
-                    <li key={index} className="flex items-start">
-                      <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0 mt-1" />
-                      <span className="ml-3 text-gray-700 text-[1rem]">
-                        {point}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+        <section>
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center space-x-2 mb-6">
+              <Target className="h-6 w-6 text-green-600" />
+              <h2 className="text-2xl montserrat-bold text-gray-900 md:text-4xl lg:text-2xl">
+                Vision Statement
+              </h2>
             </div>
-            <div className=" mt-10 lg:mt-0">
-              <div className="relative aspect-w-16">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="w-screen h-[30rem] lg:rounded-r-[2rem] shadow-large"
-                >
-                  <source src="/videos/siriboe.mp4" />
-                </video>
+            <div className="grid max-[767px]:gap-8 justify-between items-center md:gap-6 lg:flex lg:gap-16">
+              <div className="relative">
+                <div className="bg-white rounded-l-2xl shadow-xl p-8">
+                  <p className="text-[1.2rem] text-gray-600 mb-8 montserrat-regular leading-relaxed">
+                    SIASD envisions to be Africa's premier Institute and
+                    innovation hub for research-based agriculture, agribusiness
+                    and entrepreneurship education.
+                  </p>
+                  <ul className="space-y-2">
+                    {visionPoints.map((point, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0 mt-1" />
+                        <span className="ml-3 text-gray-700 text-[1rem]">
+                          {point}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
 
-        {/* Mission Section */}
+              <div className="lg:mt-0">
+                <div className="relative aspect-w-16">
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-screen md:h-[30rem] lg:rounded-r-[2rem] shadow-md lg:h-full"
+                  >
+                    <source src="/videos/siriboe.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/*--------------------- Mission Section ---------------------*/}
         <div className="mt-24 bg-gray-200">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-16 py-24 items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid max-[767px]:gap-1 sm:px-6 py-24 items-center max-w-7xl mx-auto px-4 lg:px-8 lg:grid-cols-2 lg:gap-8">
             <div className="order-2 lg:order-1">
               <div className="relative aspect-w-16 aspect-h-9">
                 <img
                   src="/images/mission.jpeg"
                   alt="Agricultural education"
-                  className="rounded-l-2xl shadow-2xl h-[28rem] object-cover"
+                  className="rounded-l-2xl shadow-2xl h-[28rem] object-cover md:w-full"
                 />
               </div>
             </div>
             <div className="relative order-1 lg:order-2 mb-10 lg:mb-0">
               <div className="flex items-center space-x-2 mb-6 absolute top-[-4rem]">
                 <Compass className="h-6 w-6 text-green-600" />
-                <h2 className="text-2xl montserrat-bold text-gray-900">
+                <h2 className="text-2xl montserrat-bold text-gray-900 md:text-4xl lg:text-2xl">
                   Mission Statement
                 </h2>
               </div>

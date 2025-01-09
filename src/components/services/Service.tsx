@@ -320,7 +320,7 @@ const courseData = [
 const Service = () => {
   return (
     <>
-      <section className="relative h-[35rem] w-screen mb-16 lg:h-[45rem]">
+      <section className="relative h-[35rem] w-screen mb-16 lg:h-[45rem] montserrat-regular">
         <img
           width={500}
           height={500}
@@ -330,7 +330,9 @@ const Service = () => {
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-6 space-y-4 z-10">
-          <h1 className="text-4xl font-bold md:text-5xl">Siriboe Services</h1>
+          <h1 className="text-4xl md:text-5xl montserrat-bold">
+            Siriboe Services
+          </h1>
           <p className="text-lg md:text-xl leading-relaxed max-w-3xl">
             Siriboe Farms believes in giving farmers and entrepreneurs authentic
             conditions to grow their trades and manufacture{" "}
@@ -346,16 +348,16 @@ const Service = () => {
       </section>
 
       {/*--------------------- SERVICES ---------------------*/}
-      <section className="max-[767px]:w-[90%] w-[98%] m-auto grid gap-4 mb-16">
+      <section className="max-[767px]:w-[90%] w-[98%] m-auto grid gap-4 mb-16 montserrat-regular">
         <div className="text-center grid gap-4">
-          <h1 className="text-3xl uppercase font-serif font-bold md:text-4xl lg:text3xl">
+          <h1 className="text-3xl uppercase md:text-4xl lg:text3xl montserrat-bold">
             SERVICES
           </h1>
           <p className="text-sm md:text-xl">
             SIASD specialized areas span across
           </p>
         </div>
-        <div className="grid max-[767px]:grid-cols-1 grid-cols-4 gap-5">
+        <div className="grid max-[767px]:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {serviceCardData.map((data) => (
             <ServiceCard
               key={data.id}
@@ -367,7 +369,7 @@ const Service = () => {
       </section>
 
       {/*------------------- TRAINING ------------------- */}
-      <section className="max-[767px]:mb-[85rem] md:mb-[70rem] lg:mb-44 ">
+      <section className="mb-[100rem] md:mb-[70rem] lg:mb-52 montserrat-regular">
         <div className="relative w-screen h-[40rem] md:w-full md:h-full text-white mb-32 shadow-xl lg:h-[48rem]">
           <div>
             <img
@@ -379,9 +381,7 @@ const Service = () => {
             />
             <div className="absolute md:h-[200%] inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/90 lg:h-full" />
             <div className="max-[767px]:top-5 relative px-6 max-w-2xl md:top-8 lg:top-32 lg:left-64">
-              <h1 className="text-5xl font-bold font-serif">
-                Training Programmes
-              </h1>
+              <h1 className="text-5xl montserrat-bold">Training Programmes</h1>
               <p className="mt-4 text-lg font">
                 Specialized courses in agribusiness and agricultural technology.
                 Courses on sustainable farming practices or precision
@@ -392,7 +392,7 @@ const Service = () => {
               </p>
             </div>
           </div>
-          <div className="grid max-[767px]:grid-cols-1 max-[767px]:top-[29rem] max-[767px]:left-4 w-[90%] m-auto md:grid-cols-1 md:gap-8 md:top-72 md:left-10 lg:grid-cols-3 lg:gap-3 lg:top-[29rem] lg:left-14 absolute">
+          <div className="grid gap-4 max-[767px]:grid-cols-1 max-[767px]:top-[29rem] max-[767px]:left-4 w-[90%] m-auto md:grid-cols-1 md:gap-8 md:top-72 md:left-10 lg:grid-cols-3 lg:gap-3 lg:top-[29rem] lg:left-14 absolute">
             {trainingData.map((data) => (
               <TraningCard
                 key={data.id}
@@ -418,7 +418,7 @@ const Service = () => {
         </div> */}
       </section>
       {/*-------------------------- Short Courses in Agriculture and Agribusiness ----------------------------*/}
-      <section className="flex flex-col md:flex-row items-center gap-10 p-8 bg-gradient-to-r from-green-700 to-green-500 mb-14 shadow-xl md:grid lg:flex">
+      <section className="montserrat-regular flex flex-col md:flex-row items-center gap-10 p-8 bg-gradient-to-r from-green-700 to-green-500 mb-14 shadow-xl md:grid lg:flex">
         <div className="w-full md:w-full">
           <img
             className="w-full h-auto rounded-lg shadow-xl"
@@ -428,14 +428,14 @@ const Service = () => {
         </div>
 
         <div className="w-full md:w-full  space-y-6 text-white">
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-3xl montserrat-bold">
             Short Courses in Agriculture and Agribusiness
           </h1>
           <div className="flex justify-center items-center gap-0.5">
             <div className="bg-white w-[20%] md:w-[10%] lg:w-[10%] h-2" />
             <div className="bg-black w-[40%] md:w-[20%] lg:w-[10%] h-2" />
           </div>
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-xl montserrat-semibold">
             Comprehensive short courses for the Siriboe Institute of
             Agribusiness and Skills Development
           </h2>
@@ -459,77 +459,9 @@ const Service = () => {
         </div>
       </section>
 
-      {/*----------------- FACILITIES -----------------*/}
-      <section className="grid gap-5 w-[90%] m-auto mb-16">
-        <div className="grid max-[767px]:gap-4 font-serif text-center md:gap-4 lg:gap-5">
-          <h1 className="text-3xl uppercase font-serif font-bold md:text-4xl lg:text3xl">
-            Our Facilities
-          </h1>
-          <p className="text-sm md:text-xl">
-            SIASD offers a wide range of versatile and modern facilities
-            designed to meet your event, meeting, and training needs. Whether
-            you’re hosting a corporate conference, a team brainstorming session,
-            or a private gathering, our state-of-the-art amenities ensure a
-            seamless and comfortable experience. Below are our facilities, their
-            features, and competitive hourly rates:
-          </p>
-        </div>
-
-        <div className="grid max-[767px]:grid-cols-1  lg:grid-cols-2 gap-4">
-          {facilitiesData.map((data) => (
-            <Facilities
-              key={data.id}
-              image={data.image}
-              title={data.title}
-              description={data.description}
-              space1={data.space1}
-              space2={data.space2}
-              space3={data.space3}
-              space4={data.space4}
-              space5={data.space5}
-              space6={data.space6}
-              rate={data.rate}
-            />
-          ))}
-        </div>
-      </section>
-
-      <section className="relative h-[30rem] w-screen mb-16">
-        <img
-          className="absolute object-cover w-full h-full"
-          src="/images/landingImages/land6.jpg"
-          alt="farmBackground"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/75 to-black/90" />
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-8 space-y-6 z-10">
-          <h1 className="text-3xl md:text-5xl font-bold text-center">
-            Why Choose SIASD Facilities?
-          </h1>
-          <ul className="text-sm md:text-lg list-disc list-inside space-y-2">
-            <li>Convenient location and ample parking.</li>
-            <li>
-              Professional on-site support to ensure your event’s success.
-            </li>
-            <li>Affordable rates without compromising quality.</li>
-            <li>Flexible booking options tailored to your needs.</li>
-          </ul>
-          <p className="text-center md:text-lg">
-            Book your space today and experience unmatched excellence at SIASD!
-            For inquiries or reservations, contact us at:
-          </p>
-          <div className="text-center">
-            <h2 className="text-xl font-semibold">Facility Manager</h2>
-            <ul className="text-sm md:text-base space-y-1">
-              <li>Tel: 0557260049</li>
-              <li>Email: atopare.siasd@gmail.com</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
       {/*---------------- Course Structure Overview ----------------*/}
-      <section className="shadow-2xl py-8">
-        <section className="grid gap-8">
+      <section className="shadow-2xl py-8 mb-16 montserrat-regular">
+        <section className="grid gap-8 montserrat-regular">
           <div
             className="relative bg-cover bg-center py-12 px-6"
             style={{
@@ -538,7 +470,7 @@ const Service = () => {
           >
             <div className="absolute inset-0 bg-black bg-opacity-40" />
             <div className="relative z-10">
-              <h1 className="text-4xl uppercase font-serif font-bold text-white mb-8 text-center tracking-wide">
+              <h1 className="text-4xl uppercase montserrat-bold text-white mb-8 text-center tracking-wide">
                 Course Structure Overview
               </h1>
               <p className="text-lg text-gray-200 mb-12 text-center leading-relaxed">
@@ -549,7 +481,7 @@ const Service = () => {
 
               <div className="flex flex-col md:flex-row justify-center items-center mb-16">
                 <div className="bg-gradient-to-r from-green-700 to-green-500 grid gap-2 text-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                  <h2 className="text-3xl font-bold">Course Duration</h2>
+                  <h2 className="text-3xl montserrat-bold">Course Duration</h2>
                   <p className="text-lg text-center">1-4 weeks per course</p>
                   <div className="flex justify-center items-center gap-2">
                     <div className="bg-white w-1/5 h-2 rounded-md" />
@@ -560,14 +492,14 @@ const Service = () => {
 
               <div className="text-left max-w-4xl mx-auto space-y-8 text-gray-200 mb-16">
                 <p className="text-lg leading-relaxed">
-                  <span className="font-bold text-green-300">
+                  <span className="montserrat-bold text-green-300">
                     Delivery Mode:{" "}
                   </span>
                   Combination of on-site practicals, field visits, and online
                   modules (where applicable).
                 </p>
                 <p className="text-lg leading-relaxed">
-                  <span className="font-bold text-green-300">
+                  <span className="montserrat-bold text-green-300">
                     Cost Structure:{" "}
                   </span>
                   Affordable fees, with options for installment payments,
@@ -594,26 +526,96 @@ const Service = () => {
         </section>
 
         <div className=" flex justify-center items-center my-4">
-          <button className="bg-black p-2 rounded-lg text-white hover:bg-green-700 transition">
+          <button className="bg-black p-2 rounded-lg text-white hover:bg-green-700 transition montserrat-bold">
             More Information
           </button>
         </div>
       </section>
 
+      {/*----------------- FACILITIES -----------------*/}
+      <section className="grid gap-5 w-[90%] m-auto mb-16 montserrat-regular">
+        <div className="grid max-[767px]:gap-4 text-center md:gap-4 lg:gap-5">
+          <h1 className="text-3xl uppercase montserrat-bold md:text-4xl lg:text3xl">
+            Our Facilities
+          </h1>
+          <p className="text-sm md:text-xl">
+            SIASD offers a wide range of versatile and modern facilities
+            designed to meet your event, meeting, and training needs. Whether
+            you’re hosting a corporate conference, a team brainstorming session,
+            or a private gathering, our state-of-the-art amenities ensure a
+            seamless and comfortable experience. Below are our facilities, their
+            features, and competitive hourly rates:
+          </p>
+        </div>
+
+        <div className="grid max-[767px]:grid-cols-1 lg:grid-cols-2 gap-4">
+          {facilitiesData.map((data) => (
+            <Facilities
+              key={data.id}
+              image={data.image}
+              title={data.title}
+              description={data.description}
+              space1={data.space1}
+              space2={data.space2}
+              space3={data.space3}
+              space4={data.space4}
+              space5={data.space5}
+              space6={data.space6}
+              rate={data.rate}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="relative h-[30rem] w-screen mb-16 montserrat-regular">
+        <img
+          className="absolute object-cover w-full h-full"
+          src="/images/landingImages/land6.jpg"
+          alt="farmBackground"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/75 to-black/90" />
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-8 space-y-6 z-10">
+          <h1 className="montserrat-bold text-3xl md:text-5xl text-center">
+            Why Choose SIASD Facilities?
+          </h1>
+          <ul className="text-sm md:text-lg list-disc list-inside space-y-2">
+            <li>Convenient location and ample parking.</li>
+            <li>
+              Professional on-site support to ensure your event’s success.
+            </li>
+            <li>Affordable rates without compromising quality.</li>
+            <li>Flexible booking options tailored to your needs.</li>
+          </ul>
+          <p className="text-center md:text-lg">
+            Book your space today and experience unmatched excellence at SIASD!
+            For inquiries or reservations, contact us at:
+          </p>
+          <div className="text-center grid gap-4">
+            <h2 className="text-xl montserrat-bold">Facility Manager</h2>
+            <ul className="text-sm md:text-base space-y-1">
+              <li>Tel: 0557260049</li>
+              <li>Email: atopare.siasd@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/*--------------------- TRAINING FEES ---------------------*/}
-      <section className="py-8 bg-gray-100">
+      <section className="py-8 bg-gray-100 montserrat-regular">
         <div className="grid gap-2 mb-8">
-          <h1 className="text-4xl text-center font-bold">Training Fees</h1>
+          <h1 className="text-4xl text-center montserrat-bold">
+            Training Fees
+          </h1>
           <div className="flex justify-center items-center gap-0.5">
             <div className="bg-green-800 w-[20%] md:w-[10%] lg:w-[10%] h-2" />
             <div className="bg-black w-[40%] md:w-[20%] lg:w-[10%] h-2" />
           </div>
         </div>
 
-        <div className=" mx-auto px-4">
+        <div className="mx-auto px-4 max-[767px]:text-sm">
           <table className="w-full table-auto border-collapse border border-gray-300 bg-white shadow-md">
             <thead>
-              <tr className="bg-green-600 text-white">
+              <tr className="bg-green-600 text-white montserrat-bold">
                 <th className="border border-gray-300 px-4 py-2">SN</th>
                 <th className="border border-gray-300 px-4 py-2">
                   Course Module
@@ -720,125 +722,3 @@ const Service = () => {
 };
 
 export default Service;
-
-// import {
-//   GraduationCap,
-//   Building,
-//   Handshake,
-//   Calendar,
-//   Leaf,
-//   Users,
-//   BookOpen,
-//   Computer,
-//   School,
-//   House,
-// } from "lucide-react";
-// import { Card, CardContent, CardHeader, CardTitle } from "@/cards/ui/card";
-// const Services = () => {
-//   const facilities = [
-//     { name: "Training rooms", icon: School },
-//     { name: "Conference centres", icon: Building },
-//     { name: "Hostel accommodation", icon: House },
-//     { name: "Processing units", icon: Building },
-//     { name: "IT lab", icon: Computer },
-//     { name: "Library", icon: BookOpen },
-//     { name: "Lounge", icon: House },
-//     { name: "Cafeteria", icon: House },
-//   ];
-//   const otherServices = [
-//     { name: "Consultation", icon: Handshake },
-//     { name: "Event hosting", icon: Calendar },
-//     { name: "Agritourism", icon: Leaf },
-//     { name: "Co-work space", icon: Users },
-//   ];
-
-{
-  /* <div className="min-h-screen bg-[#FDFBF7] py-12 px-4 sm:px-6 lg:px-8">
-
-<div className="text-center mb-16 animate-fade-in">
-  <h1 className="text-4xl montserrat-bold text-[#4A6741] mb-4">Our Services</h1>
-  <p className="text-lg text-gray-600 max-w-2xl mx-auto montserrat-semibold">
-    Empowering agriculture through education, facilities, and innovation
-  </p>
-</div>
-
-<section className="mb-16">
-  <div className="max-w-7xl mx-auto flex justify-between">
-    <Card className="hover:shadow-lg transition-shadow duration-300 montserrat-bold">
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-[#4A6741]">
-          <GraduationCap className="h-6 w-6 montserrat-bold" />
-          Training Programs and Short Courses
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="text-gray-600">
-        <p className="mb-4 montserrat-semibold">
-          Specialized courses in agribusiness and agricultural technology.
-          We offer:
-        </p>
-        <ul className="list-disc list-inside space-y-2 ml-4 montserrat-regular">
-          <li>Sustainable farming practices</li>
-          <li>Precision agriculture</li>
-          <li>Agribusiness management</li>
-          <li>Food and farm training</li>
-          <li>SME business courses</li>
-        </ul>
-      </CardContent>
-    </Card>
-    <div className="relative aspect-w-16 aspect-h-9">
-      <img
-        src="/images/training.jpeg"
-        alt="Agricultural education"
-        className="rounded-r-2xl  h-[28rem] object-cover"
-      />
-    </div>
-  </div>
-</section>
-
-<section className="mb-16">
-  <h2 className="text-3xl montserrat-semibold text-[#4A6741] text-center mb-8">
-    Our Facilities
-  </h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-    {facilities.map((facility, index) => (
-      <Card
-        key={index}
-        className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gray-100"
-      >
-        <CardContent className="pt-6">
-          <div className="flex flex-col items-center text-center">
-            <facility.icon className="h-8 w-8 text-[#8B7355] mb-4" />
-            <h3 className="montserrat-semibold text-[#4A6741]">
-              {facility.name}
-            </h3>
-          </div>
-        </CardContent>
-      </Card>
-    ))}
-  </div>
-</section>
-
-<section>
-  <h2 className="text-3xl montserrat-semibold text-[#4A6741] text-center mb-8">
-    Additional Services
-  </h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-    {otherServices.map((service, index) => (
-      <Card
-        key={index}
-        className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gray-100"
-      >
-        <CardContent className="pt-6">
-          <div className="flex flex-col items-center text-center">
-            <service.icon className="h-8 w-8 text-[#8B7355] mb-4" />
-            <h3 className="font-semibold text-[#4A6741]">
-              {service.name}
-            </h3>
-          </div>
-        </CardContent>
-      </Card>
-    ))}
-  </div>
-</section>
-</div> */
-}

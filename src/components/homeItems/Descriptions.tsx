@@ -33,10 +33,10 @@ const Descriptions = () => {
 
   return (
     <>
-      <section className="w-[90%] m-auto">
+      <section className="w-[90%] m-auto montserrat-regular">
         <div className="grid gap-4 my-8">
           <div className="grid md:gap-2">
-            <h1 className="max-[767px]:text-[0.97rem] max-[767px]:leading-7 md:text-3xl font-bold font-serif">
+            <h1 className="max-[767px]:text-[0.97rem] max-[767px]:leading-7 md:text-3xl montserrat-bold">
               Siriboe Institute Of Agribusiness and Skills
               <br /> Development
             </h1>
@@ -46,7 +46,7 @@ const Descriptions = () => {
             </div>
           </div>
 
-          <p className="max-[767px]:text-sm font-serif text-green-800 md:text-2xl lg:text-[1.2rem] lg:leading-6">
+          <p className="max-[767px]:text-sm text-green-800 md:text-2xl lg:text-[1.2rem] lg:leading-6">
             A Centre to augment agriculture, upskilling and innovation, and
             entrepreneurship… for youth to make wealth in agriculture and more.
             Access to resources to help combats youth’s insufficient access to
@@ -64,7 +64,7 @@ const Descriptions = () => {
             />
           </div>
 
-          <div className="max-[767px]:text-[0.6rem] max-[767px]:gap-2 max-[767px]:p-2 border border-black border-opacity-50 w-full h-full bg-green-400 p-8 grid md:gap-4 font-serif rounded-md shadow-xl">
+          <div className="max-[767px]:text-[0.6rem] max-[767px]:gap-2 max-[767px]:p-2 border border-black border-opacity-50 w-full h-full bg-green-400 p-8 grid md:gap-4 rounded-md shadow-xl">
             <div>
               <h1 className="uppercase montserrat-bold">
                 Siriboe Agribusiness
@@ -89,7 +89,7 @@ const Descriptions = () => {
               SIASD operates a vibrant hub, SIASD Incubation Hub, dedicated to
               nurturing innovation, collaboration, and entrepreneurial spirit
               among young innovators across the agribusiness sector. <br />
-              <span className="montserrat-bold">
+              <span className="montserrat-semibold">
                 Inspiration to Agripreneurs… Innovators… and Startuppers.
                 “Agriculture is More than Cutlass and Hoe… Technology and
                 Innovation, now!”
@@ -98,78 +98,6 @@ const Descriptions = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="pt-16 pb-8">
-        <div className="w-[95%] shadow-xlarge-white md:flex md:flex-row lg:flex lg:justify-between shadow-xlarge lg:gap-16 mx-auto items-center border-4 border-white rounded-2xl bg-green-800 hover:bg-green-700">
-          <div className="md:w-[300rem]">
-            <img
-              src="/images/landingImages/land5.jpg"
-              alt="siriboe"
-              width={1000}
-              height={500}
-              className="md:rounded-l-xl object-cover h-[30rem] transition-transform duration-500 ease-in-out transform lg:hover:scale-110 lg:hover:rounded-xl"
-            />
-          </div>
-          {introductoryMessage && (
-            <motion.p
-              initial={{ opacity: 0.5, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false }}
-              transition={{ duration: 1.5 }}
-              className="text-white montserrat-regular text-justify p-4 md:p-4 lg:pr-12 text-[1.1rem] lg:leading-[2rem]"
-            >
-              <span className="montserrat-bold">
-                “A Centre to augment agriculture, upskilling and innovation, and
-                entrepreneurship… for youth to make wealth in agriculture and
-                more.”
-              </span>{" "}
-              Access to resources to help combats youth’s insufficient access to
-              knowledge, information and education. (Youth and Agriculture: Key
-              Challenges and Concrete Solutions report, FAO, CTA & IFAD)
-            </motion.p>
-          )}
-          {!introductoryMessage && (
-            <motion.p
-              initial={{ opacity: 0.5, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false }}
-              transition={{ duration: 1.5 }}
-              className="text-white montserrat-regular text-justify p-4 md:p-4 lg:pr-12 text-[1.1rem] lg:leading-[2rem]"
-            >
-              <span>
-                Siriboe Institute of Agribusiness and Skills Development (SIASD)
-                is an agribusiness and entrepreneurship education institution
-                and business incubator program set up to provide youth and
-                aspiring entrepreneurs with the necessary theoretical and
-                practical training in agribusiness and entrepreneurship to
-                enable them successfully launch and run their businesses with a
-                focus on value chain production, processing and agriculture
-                technologies (agritech). SIASD operates a vibrant hub, SIASD
-                Incubation Hub, dedicated to nurturing innovation,
-                collaboration, and entrepreneurial spirit among young innovators
-                across the agribusiness sector. <br />
-                <span className="montserrat-bold">
-                  Inspiration to Agripreneurs… Innovators… and Startuppers.
-                  “Agriculture is More than Cutlass and Hoe… Technology and
-                  Innovation, now!”
-                </span>{" "}
-              </span>
-            </motion.p>
-          )}
-        </div>
-      </section>
-      <section className="flex place-content-center">
-        <div className="flex gap-6">
-          <button
-            className={`h-[1rem] w-[1rem] border border-[grey] rounded-[50%] ${radioColor.firstButton}`}
-            onClick={() => setIntroductoryMessage(true)}
-          ></button>
-          <button
-            className={`h-[1rem] w-[1rem] border border-[grey] rounded-[50%] ${radioColor.secondButton}`}
-            onClick={() => setIntroductoryMessage(false)}
-          ></button>
-        </div>
-      </section> */}
     </>
   );
 };

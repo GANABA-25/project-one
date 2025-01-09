@@ -65,6 +65,13 @@ const NavBar = () => {
                     <IoInformationCircleOutline fontSize={23} />
                     <li onClick={toggleOffcanvas}>What We Do</li>
                   </Link>
+                  <Link
+                    className={`hover:text-[grey] flex flex-row items-center gap-4`}
+                    href="services"
+                  >
+                    <FaTractor fontSize={23} />
+                    <li onClick={toggleOffcanvas}>Service</li>
+                  </Link>
 
                   {/* <Link
                     className={`hover:text-[grey] flex flex-row items-center gap-4`}
@@ -87,13 +94,6 @@ const NavBar = () => {
                   >
                     <FaTractor fontSize={23} />
                     <li onClick={toggleOffcanvas}>Siriboe Farms</li>
-                  </Link>
-                  <Link
-                    className={`hover:text-[grey] flex flex-row items-center gap-4`}
-                    href="services"
-                  >
-                    <FaTractor fontSize={23} />
-                    <li onClick={toggleOffcanvas}>Service</li>
                   </Link>
                   <Link
                     className={`hover:text-[grey] flex flex-row items-center gap-4`}
@@ -169,6 +169,9 @@ const NavBar = () => {
                   <Link className={`cursor-pointer`} href="/about">
                     <li>What We Do</li>
                   </Link>
+                  <Link className={`cursor-pointer`} href="services">
+                    <li>Service</li>
+                  </Link>
 
                   {/* <Link className={`cursor-pointer`} href="/services">
                     <li className="flex gap-4">Services</li>
@@ -180,9 +183,6 @@ const NavBar = () => {
 
                   <Link className={`cursor-pointer`} href="siriboe_farms">
                     <li>Siriboe Farms</li>
-                  </Link>
-                  <Link className={`cursor-pointer`} href="services">
-                    <li>Service</li>
                   </Link>
                   <Link className={`cursor-pointer`} href="/contact">
                     <li>Contact Us</li>

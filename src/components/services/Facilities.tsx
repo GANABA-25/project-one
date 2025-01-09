@@ -26,7 +26,7 @@ const Facilities: React.FC<FacilitiesProps> = ({
   rate,
 }) => {
   return (
-    <section className="shadow-lg rounded-lg overflow-hidden bg-white grid md:grid-cols-2 gap-6 font-serif py-8 px-6 max-w-5xl mx-auto">
+    <section className="montserrat-regular shadow-lg rounded-lg overflow-hidden bg-white grid md:grid-cols-2 gap-6 py-8 px-6 max-w-5xl mx-auto">
       <div className="relative w-full h-full md:h-auto">
         <img
           width={500}
@@ -38,7 +38,7 @@ const Facilities: React.FC<FacilitiesProps> = ({
       </div>
       <div className="grid gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-gray-800">{title}</h1>
+          <h1 className="text-2xl montserrat-bold text-gray-800">{title}</h1>
           <div className="flex gap-0.5">
             <div className="bg-green-800 w-[20%] md:w-[10%] lg:w-[5%] h-2" />
             <div className="bg-black w-[40%] md:w-[20%] lg:w-[10%] h-2" />
@@ -54,7 +54,7 @@ const Facilities: React.FC<FacilitiesProps> = ({
           {space5 && <li className="flex items-start gap-2">✔ {space5}</li>}
           {space6 && <li className="flex items-start gap-2">✔ {space6}</li>}
         </ul>
-        <div className="text-md font-bold text-green-600">{rate}</div>
+        <div className="text-md montserrat-bold text-green-600">{rate}</div>
       </div>
     </section>
   );
