@@ -73,15 +73,15 @@ const Footer = () => {
             className="space-y-4"
           >
             <li className="flex items-center gap-4">
-              <FaPhoneAlt className="text-green-500" />
+              <FaPhoneAlt className="text-green-500 w-7 h-7" />
               <span>+233 (0) 244464592 / +233 (0) 557260049</span>
             </li>
             <li className="flex items-center gap-4">
-              <MdOutlineMail className="text-green-500" />
+              <MdOutlineMail className="text-green-500 w-7 h-7" />
               <span>info@siasd.org / atopare.siasd@gmail.com</span>
             </li>
             <li className="flex items-center gap-4">
-              <IoLocation className="text-green-500" />
+              <IoLocation className="text-green-500 w-7 h-7" />
               <span>Bomfa, Juaben, Juaben-Ashanti, Ghana, West Africa</span>
             </li>
           </motion.ul>

@@ -162,15 +162,15 @@ const Home = () => {
           className={`${items[itemIndex]} max-[767px]:mt-1 md:mt-1 overflow-x-hidden`}
         >
           <div className="bg-gray-950 absolute w-full h-full opacity-70" />
-          <div className=" text-white">
-            <div className="w-[100%] m-auto relative ">
+          <div className=" text-white w-[80%] m-auto">
+            <div className="relative">
               {
                 <motion.h1
                   initial={{ opacity: 0.5, x: 100 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: false }}
                   transition={{ duration: 1.5 }}
-                  className="max-[450px]:text-2xl max-[767px]:text-3xl max-[767px]:my-4 text-center md:text-4xl lg:text-6xl montserrat-bold"
+                  className="max-[450px]:text-2xl max-[767px]:text-3xl max-[767px]:my-4 md:text-3xl lg:text-5xl montserrat-bold"
                 >
                   {textItems[itemIndex]}
                 </motion.h1>
@@ -203,14 +203,14 @@ const Home = () => {
                 transition={{ duration: 1.5 }}
                 className="flex items-center gap-8 mt-16 "
               >
-                <button className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[25rem] px-2 md:w-[18rem] py-2 rounded-[0.5rem] montserrat-semibold flex justify-center items-center gap-4">
+                <button className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[18rem] px-2 md:w-[16  rem] py-2 rounded-[0.5rem] montserrat-semibold flex justify-center items-center gap-4">
                   Enroll to our Institute{" "}
                   <IoArrowForwardCircle
                     fontSize={30}
                     className="hidden lg:block "
                   />
                 </button>
-                <button className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[25rem] px-2 md:w-[18rem] py-2 rounded-[0.5rem] montserrat-semibold flex justify-center items-center gap-4">
+                <button className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[18rem] px-2 md:w-[16  rem] py-2 rounded-[0.5rem] montserrat-semibold flex justify-center items-center gap-4">
                   Join our Innovation Hub{" "}
                   <IoArrowForwardCircle
                     fontSize={30}

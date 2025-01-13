@@ -46,7 +46,7 @@ const Descriptions = () => {
             </div>
           </div>
 
-          <p className="max-[767px]:text-sm text-green-800 md:text-2xl lg:text-[1.2rem] lg:leading-6">
+          <p className="max-[767px]:text-sm text-green-800 md:text-xl lg:text-[1.2rem] lg:leading-6">
             A Centre to augment agriculture, upskilling and innovation, and
             entrepreneurship… for youth to make wealth in agriculture and more.
             Access to resources to help combats youth’s insufficient access to
