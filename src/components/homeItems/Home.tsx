@@ -158,16 +158,22 @@ const Home = () => {
             <div className="w-[100%] m-auto relative ">
               {
                 <motion.h1
-                  initial={{ opacity: 0.5, x: -100 }}
+                  initial={{ opacity: 0.5, x: 100 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: false }}
                   transition={{ duration: 1.5 }}
-                  className="max-[450px]:text-2xl max-[767px]:text-3xl max-[767px]:my-4 text-center px-8  md:text-4xl lg:text-6xl montserrat-bold"
+                  className="max-[450px]:text-2xl max-[767px]:text-3xl max-[767px]:my-4 text-center md:text-4xl lg:text-6xl montserrat-bold"
                 >
                   {textItems[itemIndex]}
                 </motion.h1>
               }
-              <section className="flex place-content-center mt-20">
+              <motion.section
+                initial={{ opacity: 0.5, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1.5 }}
+                className="flex mt-20"
+              >
                 <div className="flex gap-2">
                   {items.map((item, index) => (
                     <div
@@ -181,22 +187,22 @@ const Home = () => {
                     </div>
                   ))}
                 </div>
-              </section>
+              </motion.section>
               <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
+                initial={{ opacity: 0.5, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.5 }}
-                className="flex place-content-center items-center gap-8 mt-16 "
+                className="flex items-center gap-8 mt-16 "
               >
-                <button className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[25rem] px-2 md:w-[18rem] py-2 rounded-[0.5rem] montserrat-semibold flex items-center place-content-center gap-4">
+                <button className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[25rem] px-2 md:w-[18rem] py-2 rounded-[0.5rem] montserrat-semibold flex justify-center items-center gap-4">
                   Enroll to our Institute{" "}
                   <IoArrowForwardCircle
                     fontSize={30}
                     className="hidden lg:block "
                   />
                 </button>
-                <button className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[25rem] px-2 md:w-[18rem] py-2 rounded-[0.5rem] montserrat-semibold flex items-center place-content-center gap-4">
+                <button className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[25rem] px-2 md:w-[18rem] py-2 rounded-[0.5rem] montserrat-semibold flex justify-center items-center gap-4">
                   Join our Innovation Hub{" "}
                   <IoArrowForwardCircle
                     fontSize={30}
@@ -246,18 +252,6 @@ const Home = () => {
 
           {/*---------------------------------- PARTNERS ----------------------------------*/}
           <section className="grid gap-5 mb-12">
-            <div className="text-center grid gap-5">
-              <h2 className="text-2xl font-bold text-green-800 montserrat-bold">
-                Overview of Past Programs
-              </h2>
-              <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>Koforidua Technical University</li>
-                <li>
-                  St. Louis Senior High School Monitoring and Evaluation Form
-                </li>
-              </ul>
-            </div>
-
             <div
               className="relative bg-cover bg-center bg-no-repeat min-h-screen p-6"
               style={{ backgroundImage: "url('/images/backGroundImage.jpg')" }}

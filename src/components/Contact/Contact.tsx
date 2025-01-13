@@ -15,25 +15,25 @@ const Contact = () => {
     <>
       <div className="visionContainer max-[767px]:mt-1 md:mt-1">
         <div className="bg-gray-950 absolute w-full h-full opacity-70" />
-        <div className=" text-white">
-          <div className="w-[95%] m-auto relative">
+        <div className="text-white">
+          <div className="relative">
             <motion.h1
               initial={{ opacity: 0.5, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false }}
               transition={{ duration: 1.5 }}
-              className="max-[767px]:text-xl max-[767px]:my-4 md:w-[50rem] text-center  md:text-xl lg:text-3xl montserrat-bold  "
+              className="max-[767px]:text-xl max-[767px]:my-4 md:w-[70rem] md:text-xl lg:text-3xl montserrat-bold"
             >
-              Ready for modern knowledge in Agriculture? <br />
-              OR <br />
+              Ready for modern knowledge in <br /> Agriculture? OR <br />
               for Donation, Grant or Partnership?
-              <p className="pt-8 monteserrat-bold text-4xl md:text-4xl lg:text-7xl text-green-600 text-center">
+              <p className="pt-8 monteserrat-bold text-4xl md:text-4xl lg:text-7xl text-green-600">
                 Contact Us!
               </p>
             </motion.h1>
           </div>
         </div>
       </div>
+
       <section className="lg:pt-12 bg-gray-200 border border-grey-500 montserrat-regular">
         <div className="w-13 m-auto mb-12 md:mb-12 lg:mb-24 w-[95%]">
           <section className="lg:flex lg:justify-between gap-8 items-center">

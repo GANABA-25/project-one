@@ -22,10 +22,16 @@ const SiriboeNews: React.FC<SiriboeNewsProps> = ({
   return (
     <section
       className="shadow-2xl montserrat-regular"
-      style={{ backgroundColor: color }}
+      style={{
+        backgroundColor: color,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "100%", // Ensures the section takes full available height
+      }}
     >
-      <img src={image} alt="news" />
-      <div className="grid gap-4 my-4">
+      <img src={image} alt="news" className="w-full" />
+      <div className="grid gap-4 my-4 flex-grow">
         <div
           className="w-[80%] m-auto grid gap-3 justify-center items-center"
           style={{ color: textColor }}
@@ -37,14 +43,14 @@ const SiriboeNews: React.FC<SiriboeNewsProps> = ({
             {description}
           </p>
         </div>
-        <div className="flex justify-center items-center">
-          <h1
-            className="text-sm rounded-xl p-2 md:text-xl lg:text-sm"
-            style={{ backgroundColor: ButtonColor }}
-          >
-            {button}
-          </h1>
-        </div>
+      </div>
+      <div className="flex justify-center items-center mt-auto p-4">
+        <h1
+          className="text-sm rounded-xl p-2 md:text-xl lg:text-sm"
+          style={{ backgroundColor: ButtonColor }}
+        >
+          {button}
+        </h1>
       </div>
     </section>
   );

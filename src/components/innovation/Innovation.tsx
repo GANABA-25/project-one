@@ -132,8 +132,8 @@ const Innovation = () => {
             className="w-full h-full object-cover opacity-40"
           />
         </div>
-        <div className="relative h-full flex items-center justify-center">
-          <div className="text-center text-white p-8">
+        <div className="w-[70%] m-auto relative h-full flex items-center">
+          <div className="text-white py-8">
             <h1 className="text-5xl font-bold mb-4 animate-fade-in">
               SIASD Innovation Hub
             </h1>
