@@ -62,44 +62,44 @@ const partnersData = [
   {
     id: "1",
     name: "Kwame Nkrumah University of Science and Technology",
-    logo: "/images/partnerslogos/KNUST.png",
+    logoImage: "/images/partnerslogos/KNUST.png",
   },
   {
     id: "2",
     name: "Centre for Scientific and Industrial Research (CSIR)",
-    logo: "/images/partnerslogos/csir.png",
+    logoImage: "/images/partnerslogos/csir.png",
   },
   {
     id: "3",
     name: "Kwadaso Agric College",
-    logo: "/images/partnerslogos/Kwadaso agric 2.jpg",
+    logoImage: "/images/partnerslogos/Kwadaso agric 2.jpg",
   },
   {
     id: "4",
     name: "World Bank Group",
-    logo: "/images/partnerslogos/WorldBank_Logo_optimized-17.png",
+    logoImage: "/images/partnerslogos/WorldBank_Logo_optimized-17.png",
   },
   {
     id: "5",
     name: "Ministry of Finance",
-    logo: "/images/partnerslogos/mof 1.jpg",
+    logoImage: "/images/partnerslogos/mof 1.jpg",
   },
-  { id: "6", name: "NEIP", logo: "/images/partnerslogos/Neip (1).png" },
-  { id: "7", name: "UNDP", logo: "/images/partnerslogos/UNDP_YAI.png" },
+  { id: "6", name: "NEIP", logoImage: "/images/partnerslogos/Neip (1).png" },
+  { id: "7", name: "UNDP", logoImage: "/images/partnerslogos/UNDP_YAI.png" },
   {
     id: "8",
     name: "MEST Africa",
-    logo: "/images/partnerslogos/MEST.png",
+    logoImage: "/images/partnerslogos/MEST.png",
   },
   {
     id: "9",
     name: "Siriboe Farms",
-    logo: "/images/partnerslogos/KNUST.png",
+    logoImage: "/images/partnerslogos/KNUST.png",
   },
   {
     id: "10",
     name: "Juaben Oil Mill",
-    logo: "/images/partnerslogos/KNUST.png",
+    logoImage: "/images/partnerslogos/KNUST.png",
   },
 ];
 
@@ -282,7 +282,7 @@ const Home = () => {
                     <PartnersCard
                       key={data.id}
                       name={data.name}
-                      logo={data.logo}
+                      logoImage={data.logoImage}
                     />
                   ))}
                 </div>
