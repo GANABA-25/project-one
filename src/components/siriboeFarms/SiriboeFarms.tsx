@@ -69,30 +69,28 @@ const SiriboeFarms = () => {
   return (
     <>
       {/*--------------- BACKGROUNG IMAGE ---------------*/}
-      <section className="relative h-[45rem] w-screen mb-16 montserrat-regular">
+      <section className="relative h-[35rem] w-screen mb-16 lg:h-[45rem] montserrat-regular">
         <img
-          width={500}
-          height={500}
-          className="absolute h-[45rem] object-cover w-full lg:h-[45rem]"
           src="/images/landingImages/farmer.jpg"
-          alt="farmBackground"
+          alt="Farm Background"
+          className="absolute inset-0 object-cover h-full w-full"
         />
 
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-6 space-y-4 z-10">
-          <h1 className="text-4xl md:text-5xl montserrat-bold">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70" />
+
+        <div className="relative z-10 w-[90%] max-w-6xl mx-auto flex flex-col justify-center h-full text-white text-center lg:text-left px-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold montserrat-bold">
             Siriboe Farms
           </h1>
-          <p className="text-lg md:text-xl leading-relaxed max-w-3xl">
+          <p className="mt-4 text-lg md:text-xl lg:text-2xl leading-relaxed max-w-4xl mx-auto lg:mx-0">
             Siriboe Farms believes in giving farmers and entrepreneurs authentic
             conditions to grow their trades and manufacture{" "}
-            <strong className="bg-green-800 p-1 rounded-lg">
-              {" "}
+            <strong className="bg-green-800 px-2 py-1 rounded-lg">
               nutritious food items on a worldwide scale.
             </strong>{" "}
             We are a group of people who pride ourselves on being{" "}
-            <strong className="text-red-600 p-1 rounded-lg">unique</strong> and
-            on having the desire to create.
+            <strong className="text-green-400">unique</strong> and on having the
+            desire to create.
           </p>
         </div>
       </section>

@@ -63,7 +63,7 @@ const NavBar = () => {
                     href="/about"
                   >
                     <IoInformationCircleOutline fontSize={23} />
-                    <li onClick={toggleOffcanvas}>What We Do</li>
+                    <li onClick={toggleOffcanvas}>About</li>
                   </Link>
                   <Link
                     className={`hover:text-[grey] flex flex-row items-center gap-4`}
@@ -167,7 +167,7 @@ const NavBar = () => {
               <div className="flex gap-12 montserrat-semibold">
                 <ul className="hidden lg:flex justify-center items-center gap-8 text-white">
                   <Link className={`cursor-pointer`} href="/about">
-                    <li>What We Do</li>
+                    <li>About</li>
                   </Link>
                   <Link className={`cursor-pointer`} href="services">
                     <li>Service</li>

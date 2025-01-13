@@ -141,7 +141,7 @@ export function Team() {
                         key={member.name}
                         className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
                       >
-                        <div className="relative h-48">
+                        <div className="relative h-[33rem]">
                           <img
                             src={member.image}
                             alt={member.name}

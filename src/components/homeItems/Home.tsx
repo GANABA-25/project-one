@@ -15,9 +15,9 @@ const newsData = [
   {
     id: "1",
     image: "/images/newsImage.jpg",
-    title: "Enterprise guide",
+    title: " Rethink",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandaeillo ab cupiditate modi maiores omnis debitis rerum eius? Debitis,eveniet iste. Consectetur.",
+      "Our future starts now. An initiative of the office of the 2022 National Best Farmer Launch of Rethink.",
     button: "Read More",
     color: "#6953cf",
     textColor: "white",
@@ -247,13 +247,6 @@ const Home = () => {
           {/*---------------------------------- PARTNERS ----------------------------------*/}
           <section className="grid gap-5 mb-12">
             <div className="text-center grid gap-5">
-              <h1 className="text-4xl font-bold text-green-800 montserrat-bold">
-                Rethink
-              </h1>
-              <p className="text-gray-700 text-lg">
-                Our future starts now. An initiative of the office of the 2022
-                National Best Farmer Launch of Rethink.
-              </p>
               <h2 className="text-2xl font-bold text-green-800 montserrat-bold">
                 Overview of Past Programs
               </h2>
