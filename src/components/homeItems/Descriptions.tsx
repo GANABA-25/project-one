@@ -56,10 +56,10 @@ const Descriptions = () => {
         </div>
 
         <div className="flex max-[767px]:gap-2 md:gap-3 lg:gap-4">
-          <div className="w-full relative shadow-xl lg:w-[70%]">
+          <div className="w-full relative shadow-xl lg:w-[50%]">
             <div className="absolute w-full h-full rounded-md bg-orange-600" />
             <img
-              className="absolute w-full h-full shadow-2xl"
+              className="absolute w-full h-full shadow-2xl object-contain"
               src="/images/girls.png"
             />
           </div>

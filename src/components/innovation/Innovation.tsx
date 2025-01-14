@@ -401,7 +401,7 @@ const Innovation = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className=" flex jusity-between gap-12 w-full bg-red-500">
+          <div className=" flex jusity-between gap-12 w-full my-4">
             <CarouselPrevious />
             <CarouselNext />
           </div>
