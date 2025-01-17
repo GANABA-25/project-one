@@ -59,59 +59,6 @@ const newsData = [
   },
 ];
 
-const partnersData = [
-  {
-    id: "1",
-    name: "Kwame Nkrumah University of Science and Technology",
-    logoImage: "/images/home/partners-Logos/KNUST.png",
-  },
-  {
-    id: "2",
-    name: "Centre for Scientific and Industrial Research (CSIR)",
-    logoImage: "/images/home/partners-Logos/csir.png",
-  },
-  {
-    id: "3",
-    name: "Kwadaso Agric College",
-    logoImage: "/images/home/partners-Logos/Kwadaso agric 2.jpg",
-  },
-  {
-    id: "4",
-    name: "World Bank Group",
-    logoImage: "/images/home/partners-Logos/WorldBank_Logo_optimized-17.png",
-  },
-  {
-    id: "5",
-    name: "Ministry of Finance",
-    logoImage: "/images/home/partners-Logos/mof 1.jpg",
-  },
-  {
-    id: "6",
-    name: "NEIP",
-    logoImage: "/images/home/partners-Logos/Neip (1).png",
-  },
-  {
-    id: "7",
-    name: "UNDP",
-    logoImage: "/images/home/partners-Logos/UNDP_YAI.png",
-  },
-  {
-    id: "8",
-    name: "MEST Africa",
-    logoImage: "/images/home/partners-Logos/MEST.png",
-  },
-  {
-    id: "9",
-    name: "Siriboe Farms",
-    logoImage: "/images/home/partners-Logos/KNUST.png",
-  },
-  {
-    id: "10",
-    name: "Juaben Oil Mill",
-    logoImage: "/images/home/partners-Logos/KNUST.png",
-  },
-];
-
 const Home = () => {
   const [itemIndex, setItemIndex] = useState<number>(0);
   const [background, setBackground] = useState<string[]>([
@@ -278,7 +225,7 @@ const Home = () => {
               <p>Our strategic partners who believe in our vision</p>
             </div>
             <div className="bg-white bg-opacity-[90%] flex justify-center items-center md:py-12">
-              <Responsive />
+              <PartnersCard />
             </div>
           </section>
           <div>
