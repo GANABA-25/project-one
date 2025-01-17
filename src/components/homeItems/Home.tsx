@@ -10,6 +10,7 @@ import SiriboeNews from "./SereBoeNews";
 
 import Events from "./events/Events";
 import PartnersCard from "./serviceItems/PartnersCard";
+import Responsive from "./serviceItems/PartnersCard";
 
 const newsData = [
   {
@@ -175,6 +176,16 @@ const Home = () => {
                   {textItems[itemIndex]}
                 </motion.h1>
               }
+              <div className="mt-8 text-2xl montserrat-regular">
+                <motion.h1
+                  initial={{ opacity: 0.5, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 1.5 }}
+                >
+                  We empower you to innovate...
+                </motion.h1>
+              </div>
               <motion.section
                 initial={{ opacity: 0.5, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -259,36 +270,15 @@ const Home = () => {
           </div>
 
           {/*---------------------------------- PARTNERS ----------------------------------*/}
-          <section className="grid gap-5 mb-12">
-            <div
-              className="relative bg-cover bg-center bg-no-repeat min-h-screen p-6"
-              style={{ backgroundImage: "url('/images/backGroundImage.jpg')" }}
-            >
-              <div className="absolute inset-0 bg-black/70" />
-              <div className="relative space-y-8 p-6 shadow-lg text-white">
-                <div>
-                  <h1 className="montserrat-bold text-4xl text-center">
-                    Our Partners
-                  </h1>
-                  <div className="flex justify-center items-center gap-0.5">
-                    <div className="bg-green-800 w-[20%] md:w-[10%] lg:w-[5%] h-2" />
-                    <div className="bg-white w-[40%] md:w-[20%] lg:w-[10%] h-2" />
-                  </div>
-                </div>
-                <p className="text-lg  text-center max-w-2xl mx-auto">
-                  Our future starts now. An initiative of the office of the 2022
-                  National Best Farmer Launch of Rethink.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {partnersData.map((data) => (
-                    <PartnersCard
-                      key={data.id}
-                      name={data.name}
-                      logoImage={data.logoImage}
-                    />
-                  ))}
-                </div>
-              </div>
+          <section className="grid gap-5 mb-12 bg-green-300 max-[767px]:py-2 max-[767px]:pb-8 py-8">
+            <div className="text-center text-green-600 grid gap-4">
+              <h1 className="max-[767px]:text-3xl text-5xl montserrat-bold">
+                Partners
+              </h1>
+              <p>Our strategic partners who believe in our vision</p>
+            </div>
+            <div className="bg-white bg-opacity-[90%] flex justify-center items-center md:py-12">
+              <Responsive />
             </div>
           </section>
           <div>

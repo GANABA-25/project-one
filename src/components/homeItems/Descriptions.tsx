@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+import { HiOutlineArrowSmallRight } from "react-icons/hi2";
+
 const Descriptions = () => {
   const [introductoryMessage, setIntroductoryMessage] = useState(true);
   const [radioColor, setRadioColor] = useState({
@@ -33,68 +35,51 @@ const Descriptions = () => {
 
   return (
     <>
-      <section className="w-[90%] m-auto montserrat-regular">
-        <div className="grid gap-4 my-8">
-          <div className="grid md:gap-2">
-            <h1 className="max-[767px]:text-[0.97rem] max-[767px]:leading-7 md:text-3xl montserrat-bold">
-              Siriboe Institute Of Agribusiness and Skills
-              <br /> Development
-            </h1>
-            <div className="flex gap-0.5">
-              <div className="bg-green-800 w-[5%] h-2" />
-              <div className="bg-black w-[10%] h-2" />
-            </div>
+      <section className="grid gap-12 montserrat-regular mt-12">
+        <div className="grid gap-3 m-2 max-[767px]:mx-4">
+          <h1 className="max-[767px]:text-xl text-center montserrat-bold text-4xl text-green-600">
+            Siriboe Institute Of Agribusiness
+            <br /> and Skills Development
+          </h1>
+          <div className="max-[767px]:text-md  flex justify-center items-center md:p-6 lg:p-0 leading-7 lg:text-justify">
+            <p>
+              A Centre to augment agriculture, upskilling and innovation, and
+              entrepreneurship… for youth to make wealth in{" "}
+              <br className="hidden lg:block" />
+              agriculture and more. Access to resources to help combats youth’s
+              insufficient access to knowledge,{" "}
+              <br className="hidden lg:block" />
+              information and education.br
+              <br className="hidden lg:block" />
+              (Youth and Agriculture: Key Challenges and Concrete Solutions
+              report, FAO, CTA & IFAD)
+            </p>
           </div>
-
-          <p className="max-[767px]:text-sm text-green-800 md:text-xl lg:text-[1.2rem] lg:leading-6">
-            A Centre to augment agriculture, upskilling and innovation, and
-            entrepreneurship… for youth to make wealth in agriculture and more.
-            Access to resources to help combats youth’s insufficient access to
-            knowledge, information and education.(Youth and Agriculture: Key
-            Challenges and Concrete Solutions report, FAO, CTA & IFAD)
-          </p>
         </div>
 
-        <div className="flex max-[767px]:gap-2 md:gap-3 lg:gap-4">
-          <div className="w-full relative shadow-xl lg:w-[50%]">
-            <div className="absolute w-full h-full rounded-md bg-orange-600" />
+        <div className="max-[767px]:p-4 bg-green-200 bg-opacity-50 rounded-md md:p-6 lg:p-8">
+          <div className="grid gap-4 md:gap-8 lg:flex lg:flex-row lg:w-[90%] lg:m-auto">
             <img
-              className="absolute w-full h-full shadow-2xl object-contain"
-              src="/images/girls.png"
+              src="/images/home/twoPeople.jpg"
+              alt="Innovation Hub"
+              className="max-[767px]:w-full md:w-full lg:w-1/2 h-auto object-cover rounded-md shadow-md"
             />
-          </div>
-
-          <div className="max-[767px]:text-[0.6rem] max-[767px]:gap-2 max-[767px]:p-2 border border-black border-opacity-50 w-full h-full bg-green-400 p-8 grid md:gap-4 rounded-md shadow-xl">
-            <div>
-              <h1 className="uppercase montserrat-bold">
-                Siriboe Agribusiness
-              </h1>
-              <div className="flex gap-0.5">
-                <div className="bg-green-800 w-[5%] h-2" />
-                <div className="bg-orange-500 w-[10%] h-2" />
+            <div className="relative grid max-[767px]:gap-8 max-[767px]:w-full max-[767px]:mt-8 md:gap-8 md:mt-8 md:w-full lg:gap-0 lg:mt-0 lg:w-1/2 px-4 py-8 bg-green-200 drop-shadow-xl rounded-md">
+              <div className="absolute max-[767px]:bottom-[38.5rem] max-[767px]:right-[5rem] w-[50%] h-[2rem] bg-green-600 md:bottom-[20.5rem] md:right-[13rem] lg:bottom-[29.5rem] lg:right-[13rem]" />
+              <p className="text-xl text-justify text-green-800 leading-8">
+                Siriboe Institute of Agribusiness and Skills Development (SIASD)
+                is an agribusiness and entrepreneurship education institution
+                and business incubator program set up to provide youth and
+                aspiring entrepreneurs with the necessary theoretical and
+                practical training in agribusiness and entrepreneurship to
+                enable them successfully launch and run their businesses with a
+                focus on value chain production, processing and agriculture
+                technologies (agritech).
+              </p>
+              <div className="flex justify-center items-center">
+                <HiOutlineArrowSmallRight className="w-16 h-6 transform scale-x-150 text-green-600 hover:scale-x-160 transition-transform duration-300" />
               </div>
             </div>
-
-            <p className="lg:text-sm">
-              Siriboe Institute of Agribusiness and Skills Development (SIASD)
-              is an agribusiness and entrepreneurship education institution and
-              business incubator program set up to provide youth and aspiring
-              entrepreneurs with the necessary theoretical and practical
-              training in agribusiness and entrepreneurship to enable them
-              successfully launch and run their businesses with a focus on value
-              chain production, processing and agriculture technologies
-              (agritech).{" "}
-            </p>
-            <p className="hidden lg:block lg:text-sm">
-              SIASD operates a vibrant hub, SIASD Incubation Hub, dedicated to
-              nurturing innovation, collaboration, and entrepreneurial spirit
-              among young innovators across the agribusiness sector. <br />
-              <span className="montserrat-semibold">
-                Inspiration to Agripreneurs… Innovators… and Startuppers.
-                “Agriculture is More than Cutlass and Hoe… Technology and
-                Innovation, now!”
-              </span>
-            </p>
           </div>
         </div>
       </section>

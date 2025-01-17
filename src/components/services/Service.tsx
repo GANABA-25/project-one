@@ -50,7 +50,7 @@ const facilitiesData = [
   },
   {
     id: "4",
-    image: "/images/service/library.jpg",
+    image: "/images/service/Library.jpg",
     title: "World Class Library",
     description:
       "Our library is a quiet and resourceful space for research, study, or private meetings, featuring:",
@@ -327,20 +327,27 @@ const Service = () => {
           className="absolute inset-0 object-cover h-full w-full"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70" />
-        <div className="relative z-10 w-[90%] max-w-6xl mx-auto flex flex-col justify-center h-full text-white text-center lg:text-left px-6">
-          <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold montserrat-bold">
-            Siriboe Services
-          </h1>
-          <p className="mt-4 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto lg:mx-0">
-            Siriboe Farms believes in giving farmers and entrepreneurs authentic
-            conditions to grow their trades and manufacture{" "}
-            <strong className="bg-green-800 px-2 py-1 rounded-lg">
-              nutritious food items on a worldwide scale.
-            </strong>{" "}
-            We are a group of people who pride ourselves on being{" "}
-            <strong className="text-green-400">unique</strong> and on having the
-            desire to create.
-          </p>
+        <div className="gap-5 text-start relative z-10 w-[90%] max-w-6xl mx-auto flex flex-col justify-center h-full text-white lg:text-left px-6">
+          <div>
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold montserrat-bold">
+              Siriboe Services
+            </h1>
+            <p className="mt-4 text-justify text-lg md:text-xl leading-relaxed max-w-4xl mx-auto lg:mx-0">
+              Siriboe Farms believes in giving farmers and entrepreneurs
+              authentic conditions to grow their trades and manufacture{" "}
+              <strong className="bg-green-800 px-2 py-1 rounded-lg">
+                nutritious food items on a worldwide scale.
+              </strong>{" "}
+              We are a group of people who pride ourselves on being{" "}
+              <strong className="text-green-400">unique</strong> and on having
+              the desire to create.
+            </p>
+          </div>
+          <div className="montserrat-bold">
+            <button className="bg-green-800 text-white rounded-md p-2 lg:hover:bg-green-600 cursor-pointer">
+              Ream More
+            </button>
+          </div>
         </div>
       </section>
 
