@@ -192,7 +192,7 @@ const Home = () => {
           <div>
             <Descriptions />
           </div>
-          <div className="bg-blue-950 py-8 grid gap-8 text-white montserrat-regular">
+          <div className="bg-blue-950 py-16 grid gap-8 text-white montserrat-regular">
             <div className="text-center w-[95%] m-auto grid gap-2">
               <h1 className="max-[767px]:text-3xl montserrat-bold md:text-4xl lg:text-4xl flex justify-center items-center gap-1">
                 Siriboe News <FcNews />
@@ -224,7 +224,7 @@ const Home = () => {
           </div>
 
           {/*---------------------------------- PARTNERS ----------------------------------*/}
-          <section className="max-[767px]:py-16 grid gap-5 bg-green-300 py-32">
+          <section className="max-[767px]:py-16 grid gap-5 bg-green-300 py-20">
             <div className="text-center text-green-600 grid gap-4">
               <h1 className="max-[767px]:text-3xl text-5xl montserrat-bold">
                 Partners

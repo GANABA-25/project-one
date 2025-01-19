@@ -41,7 +41,7 @@ const Descriptions = () => {
             Siriboe Institute Of Agribusiness
             <br /> and Skills Development
           </h1>
-          <div className="max-[767px]:text-md  flex justify-center items-center md:p-6 lg:p-0 leading-7 lg:text-justify">
+          <div className="max-[767px]:text-md flex justify-center items-center md:p-6 lg:p-0 leading-7 lg:text-justify">
             <p>
               A Centre to augment agriculture, upskilling and innovation, and
               entrepreneurship… for youth to make wealth in{" "}
@@ -49,15 +49,13 @@ const Descriptions = () => {
               agriculture and more. Access to resources to help combats youth’s
               insufficient access to knowledge,{" "}
               <br className="hidden lg:block" />
-              information and education.br
-              <br className="hidden lg:block" />
-              (Youth and Agriculture: Key Challenges and Concrete Solutions
-              report, FAO, CTA & IFAD)
+              information and education (Youth and Agriculture: Key Challenges
+              and Concrete Solutions report, FAO, CTA & IFAD)
             </p>
           </div>
         </div>
 
-        <div className="max-[767px]:py-16 max-[767px]:px-4 bg-green-200 bg-opacity-50 rounded-md md:p-16 lg:p-32 ">
+        <div className="max-[767px]:py-16 max-[767px]:px-4 bg-green-200 bg-opacity-50 rounded-md md:p-16 lg:p-32">
           <div className="grid gap-4 md:gap-8 lg:flex lg:flex-row lg:w-[90%] lg:m-auto">
             <img
               src="/images/home/twoPeople.jpg"
