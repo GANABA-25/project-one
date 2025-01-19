@@ -3,18 +3,17 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 const Events = () => {
-
   const slicedData = eventData.slice(0, 6);
 
-  const dateSplit = (dateParts:string)=>{
-        const itemSplit = dateParts.split(" ")
-        const month = itemSplit[0].slice(0, 3)
-        const day = itemSplit[1].replace(",", " ")
+  const dateSplit = (dateParts: string) => {
+    const itemSplit = dateParts.split(" ");
+    const month = itemSplit[0].slice(0, 3);
+    const day = itemSplit[1].replace(",", " ");
 
-        const result = `${month} ${day}`;
+    const result = `${month} ${day}`;
 
-        return result
-  }
+    return result;
+  };
 
   return (
     <>
@@ -33,25 +32,34 @@ const Events = () => {
           <h1 className="max-[767px]:text-3xl  max-[767px]:my-3 montserrat-bold font-bold md:text-4xl md:my-4 lg:text-4xl lg:my-4">
             Upcoming Events
           </h1>
-          {slicedData.map((eventName)=>(
-            <motion.div 
-            initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: false }}
-                  transition={{ duration: 1.5 }}
-                  key={eventName.id}
-            className="flex flex-row items-center my-2 lg:w-[55rem] bg-gray-100 lg:rounded-r-[1.2rem]">
-                <div className="bg-[#D6D3D1] py-12 text-center  w-[12rem] montserrat-semibold">
-                    {dateSplit(eventName.date)}
-                </div>
-                <div className="px-8">
-                    <h6 className="text-blue-500 text-[1rem] montserrat-bold">{eventName.title}</h6>
-                    <p className="text-[1rem] montserrat-regular">{`${eventName.day}, ${eventName.date}, ${eventName.time}`}</p>
-                    <p className="text-[1rem] montserrat-regular">{eventName.venue}</p>
-                </div>
+          {slicedData.map((eventName) => (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: false }}
+              transition={{ duration: 1.5 }}
+              key={eventName.id}
+              className="flex flex-row items-center my-2 lg:w-[55rem] bg-gray-100 lg:rounded-r-[1.2rem]"
+            >
+              <div className="bg-[#D6D3D1] py-12 text-center  w-[12rem] montserrat-semibold">
+                {dateSplit(eventName.date)}
+              </div>
+              <div className="px-8">
+                <h6 className="text-blue-500 text-[1rem] montserrat-bold">
+                  {eventName.title}
+                </h6>
+                <p className="text-[1rem] montserrat-regular">{`${eventName.day}, ${eventName.date}, ${eventName.time}`}</p>
+                <p className="text-[1rem] montserrat-regular">
+                  {eventName.venue}
+                </p>
+              </div>
             </motion.div>
           ))}
-          <a href="#####"><p className="text-blue-500 montserrat-semibold py-4 flex flex-row items-center gap-4">More Events <FaArrowRightLong /></p> </a>
+          <a href="#####">
+            <p className="text-blue-500 montserrat-semibold py-4 flex flex-row items-center gap-4 cursor-not-allowed">
+              More Events <FaArrowRightLong />
+            </p>{" "}
+          </a>
         </section>
       </section>
     </>

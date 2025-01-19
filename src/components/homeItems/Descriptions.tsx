@@ -57,15 +57,14 @@ const Descriptions = () => {
           </div>
         </div>
 
-        <div className="max-[767px]:p-4 bg-green-200 bg-opacity-50 rounded-md md:p-6 lg:p-8">
+        <div className="max-[767px]:py-16 max-[767px]:px-4 bg-green-200 bg-opacity-50 rounded-md md:p-16 lg:p-32 ">
           <div className="grid gap-4 md:gap-8 lg:flex lg:flex-row lg:w-[90%] lg:m-auto">
             <img
               src="/images/home/twoPeople.jpg"
               alt="Innovation Hub"
               className="max-[767px]:w-full md:w-full lg:w-1/2 h-auto object-cover rounded-md shadow-md"
             />
-            <div className="relative grid max-[767px]:gap-8 max-[767px]:w-full max-[767px]:mt-8 md:gap-8 md:mt-8 md:w-full lg:gap-0 lg:mt-0 lg:w-1/2 px-4 py-8 bg-green-200 drop-shadow-xl rounded-md">
-              <div className="absolute max-[767px]:bottom-[38.5rem] max-[767px]:right-[5rem] w-[50%] h-[2rem] bg-green-600 md:bottom-[20.5rem] md:right-[13rem] lg:bottom-[29.5rem] lg:right-[13rem]" />
+            <div className="grid max-[767px]:gap-8 max-[767px]:w-full max-[767px]:mt-8 md:gap-8 md:mt-8 md:w-full lg:gap-0 lg:mt-0 lg:w-1/2 px-4 py-8 bg-green-200 drop-shadow-xl rounded-md">
               <p className="text-xl text-justify text-green-800 leading-8">
                 Siriboe Institute of Agribusiness and Skills Development (SIASD)
                 is an agribusiness and entrepreneurship education institution

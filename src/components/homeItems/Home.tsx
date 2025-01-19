@@ -11,6 +11,7 @@ import SiriboeNews from "./SereBoeNews";
 import Events from "./events/Events";
 import PartnersCard from "./serviceItems/PartnersCard";
 import Responsive from "./serviceItems/PartnersCard";
+import Link from "next/link";
 
 const newsData = [
   {
@@ -19,7 +20,7 @@ const newsData = [
     title: " Rethink",
     description:
       "Our future starts now. An initiative of the office of the 2022 National Best Farmer Launch of Rethink.",
-    button: "Read More",
+    button: "Find More",
     color: "#6953cf",
     textColor: "white",
     ButtonColor: "#48bb78",
@@ -30,7 +31,7 @@ const newsData = [
     title: "Enterprise guide",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandaeillo ab cupiditate modi maiores omnis debitis rerum eius? Debitis,eveniet iste. Consectetur.",
-    button: "Read More",
+    button: "Find More",
     color: "#08374c",
     textColor: "green",
     ButtonColor: "#48bb78",
@@ -41,7 +42,7 @@ const newsData = [
     title: "Enterprise guide",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandaeillo ab cupiditate modi maiores omnis debitis rerum eius? Debitis,eveniet iste. Consectetur.",
-    button: "Read More",
+    button: "Find More",
     color: "#8cf49b",
     textColor: "black",
     ButtonColor: "#6953cf",
@@ -52,7 +53,7 @@ const newsData = [
     title: "Enterprise guide",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandaeillo ab cupiditate modi maiores omnis debitis rerum eius? Debitis,eveniet iste. Consectetur.",
-    button: "Read More",
+    button: "Find More",
     color: "#f36d50",
     textColor: "black",
     ButtonColor: "black",
@@ -161,20 +162,26 @@ const Home = () => {
                 transition={{ duration: 1.5 }}
                 className="flex items-center gap-8 mt-16 "
               >
-                <button className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[18rem] px-2 md:w-[16  rem] py-2 rounded-[0.5rem] montserrat-semibold flex justify-center items-center gap-4">
+                <Link
+                  href="/contact"
+                  className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[18rem] px-2 md:w-[16  rem] py-2 rounded-[0.5rem] montserrat-semibold flex justify-center items-center gap-4"
+                >
                   Enroll to our Institute{" "}
                   <IoArrowForwardCircle
                     fontSize={30}
                     className="hidden lg:block "
                   />
-                </button>
-                <button className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[18rem] px-2 md:w-[16  rem] py-2 rounded-[0.5rem] montserrat-semibold flex justify-center items-center gap-4">
+                </Link>
+                <Link
+                  href="/contact"
+                  className="bg-blue-500 border border-red-200 hover:bg-blue-600 text-sm md:text-lg lg:w-[18rem] px-2 md:w-[16  rem] py-2 rounded-[0.5rem] montserrat-semibold flex justify-center items-center gap-4"
+                >
                   Join our Innovation Hub{" "}
                   <IoArrowForwardCircle
                     fontSize={30}
                     className="hidden lg:block"
                   />
-                </button>
+                </Link>
               </motion.div>
               <section></section>
             </div>
@@ -185,7 +192,7 @@ const Home = () => {
           <div>
             <Descriptions />
           </div>
-          <div className="bg-blue-950 mt-6 py-8 grid gap-8 text-white montserrat-regular mb-16">
+          <div className="bg-blue-950 py-8 grid gap-8 text-white montserrat-regular">
             <div className="text-center w-[95%] m-auto grid gap-2">
               <h1 className="max-[767px]:text-3xl montserrat-bold md:text-4xl lg:text-4xl flex justify-center items-center gap-1">
                 Siriboe News <FcNews />
@@ -217,14 +224,14 @@ const Home = () => {
           </div>
 
           {/*---------------------------------- PARTNERS ----------------------------------*/}
-          <section className="grid gap-5 mb-12 bg-green-300 max-[767px]:py-2 max-[767px]:pb-8 py-8">
+          <section className="max-[767px]:py-16 grid gap-5 bg-green-300 py-32">
             <div className="text-center text-green-600 grid gap-4">
               <h1 className="max-[767px]:text-3xl text-5xl montserrat-bold">
                 Partners
               </h1>
               <p>Our strategic partners who believe in our vision</p>
             </div>
-            <div className="bg-white bg-opacity-[90%] flex justify-center items-center md:py-12">
+            <div className="bg-white bg-opacity-[90%] flex justify-center items-center md:py-12 lg:py-32">
               <PartnersCard />
             </div>
           </section>

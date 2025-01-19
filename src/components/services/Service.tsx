@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import Facilities from "./Facilities";
 import ServiceCard from "./ServiceCard";
@@ -322,11 +323,11 @@ const Service = () => {
     <>
       <section className="relative h-[35rem] w-screen mb-16 lg:h-[45rem] montserrat-regular">
         <img
-          src="/images/landingImages/farmer.jpg"
+          src="/images/home/homeImage1.jpg"
           alt="Farm Background"
           className="absolute inset-0 object-cover h-full w-full"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/90" />
         <div className="gap-5 text-start relative z-10 w-[90%] max-w-6xl mx-auto flex flex-col justify-center h-full text-white lg:text-left px-6">
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold montserrat-bold">
@@ -344,9 +345,12 @@ const Service = () => {
             </p>
           </div>
           <div className="montserrat-bold">
-            <button className="bg-green-800 text-white rounded-md p-2 lg:hover:bg-green-600 cursor-pointer">
-              Ream More
-            </button>
+            <Link
+              href="/contact"
+              className="bg-green-800 text-white rounded-md p-2 lg:hover:bg-green-600 cursor-pointer"
+            >
+              Find More
+            </Link>
           </div>
         </div>
       </section>

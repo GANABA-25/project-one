@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface SiriboeNewsProps {
   image: string;
@@ -45,12 +46,13 @@ const SiriboeNews: React.FC<SiriboeNewsProps> = ({
         </div>
       </div>
       <div className="flex justify-center items-center mt-auto p-4">
-        <h1
-          className="text-sm rounded-xl p-2 md:text-xl lg:text-sm"
+        <Link
+          href="/contact"
+          className="text-sm rounded-xl p-2 md:text-xl cursor-pointer lg:text-sm"
           style={{ backgroundColor: ButtonColor }}
         >
           {button}
-        </h1>
+        </Link>
       </div>
     </section>
   );
